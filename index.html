@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mwendokasi Bus Ticket Booking</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Mwendokasi Online Ticket Booking</h1>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Route.html">Routes</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Booking Form -->
+        <section class="booking-form">
+
+            <h2>Book Your Ticket</h2>
+
+            <form id="ticketForm">
+
+                <!-- Passenger Name -->
+                <label for="name">Passenger Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required oninput="validateName()">
+
+                <!-- Phone Number -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required oninput="validatePhone()">
+
+                <!-- Destination -->
+                <label for="destination">Destination:</label>
+
+                <select id="destination" name="destination" required>
+                    <option value="">-- Select Destination --</option>
+                    <option value="Kimara">Kimara</option>
+                    <option value="Kivukoni">Kivukoni</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Ubungo">Ubungo</option>
+                    <option value="Gerezani">Gerezani</option>
+                </select>
+
+                <!-- Ticket Price -->
+<label for="price">Ticket Price (TZS):</label>
+
+<input
+    type="text"
+    id="price"
+    readonly
+    placeholder="Ticket price will appear here"
+>
+
+
+
+<!-- Payment Method -->
+<label for="paymentMethod">
+    Payment Method:
+</label>
+
+<select id="paymentMethod" onchange="showBankOptions()">
+
+    <option value="">
+        -- Select Payment Method --
+    </option>
+
+    <option value="Bank">
+        Bank
+    </option>
+
+    <option value="M-Pesa">
+        M-Pesa
+    </option>
+
+    <option value="Mixx by Yas">
+        Mixx by Yas
+    </option>
+
+    <option value="HaloPesa">
+        HaloPesa
+    </option>
+
+    <option value="Azam Pesa">
+        Azam Pesa
+    </option>
+
+    <option value="Airtel Money">
+        Airtel Money
+    </option>
+
+</select>
+
+
+
+<!-- Bank Options -->
+<div id="bankSection" style="display:none;">
+
+    <label for="bankName">
+        Select Bank:
+    </label>
+
+    <select id="bankName">
+
+        <option value="">
+            -- Select Bank --
+        </option>
+
+        <option value="NMB">
+            NMB Bank
+        </option>
+
+        <option value="CRDB">
+            CRDB Bank
+        </option>
+
+        <option value="NBC">
+            NBC Bank
+        </option>
+
+    </select>
+
+</div>
+
+                <!-- Submit Button -->
+                <button type="button" onclick="bookTicket()">
+                    Book Ticket
+                </button>
+
+            </form>
+
+        <!-- Printable Ticket Section -->
+<section id="ticket" class="ticket-container">
+
+    <!-- Watermark Image -->
+    <img
+        src="bus.png"
+        alt="Bus Watermark"
+        class="watermark"
+    >
+
+    <h2>Mwendokasi BUS TICKET</h2>
+
+    <p>
+        <strong>Passenger Name:</strong>
+        <span id="ticketName"></span>
+    </p>
+
+    <p>
+        <strong>Phone Number:</strong>
+        <span id="ticketPhone"></span>
+    </p>
+
+    <p>
+        <strong>Destination:</strong>
+        <span id="ticketDestination"></span>
+    </p>
+
+    <p>
+    <strong>Ticket Price:</strong>
+    <span id="ticketPrice"></span>
+</p>
+
+<p>
+    <strong>Payment Method:</strong>
+    <span id="ticketPayment"></span>
+</p>
+
+    <p>
+        <strong>Date:</strong>
+        <span id="ticketDate"></span>
+    </p>
+
+    <!-- Buttons -->
+    <div class="ticket-buttons">
+
+        <button onclick="printTicket()">
+            Print Ticket
+        </button>
+
+        <button onclick="downloadTicket()">
+            Download Ticket
+        </button>
+
+    </div>
+
+</section>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Mwendokasi Ticket Booking System | All Rights Reserved
+        </p>
+    </footer>
+
+    <!-- jsPDF Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
