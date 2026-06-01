@@ -1,0 +1,463 @@
+/* General Page Styling */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Header Section */
+header{
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Menu */
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Hover Effect on Navigation Links */
+nav ul li a:hover{
+    color: yellow;
+}
+
+/* Booking Form Section */
+.booking-form{
+    width: 40%;
+    background-color: white;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+/* Form Heading */
+.booking-form h2{
+    text-align: center;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Input Fields and Select Box */
+input,
+select{
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+button:hover{
+    background-color: #0066cc;
+}
+
+/* Footer Section */
+footer{
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+
+/* Ticket Container */
+.ticket-container{
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #004080;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+
+    /* Hide ticket initially */
+    display: none;
+}
+
+/* Ticket Heading */
+.ticket-container h2{
+    text-align: center;
+    color: #004080;
+}
+
+/* Ticket Paragraphs */
+.ticket-container p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Print Button */
+.ticket-container button{
+    margin-top: 20px;
+}
+
+/* Print Mode */
+@media print{
+
+    body *{
+        visibility: hidden;
+    }
+
+    #ticket,
+    #ticket *{
+        visibility: visible;
+    }
+
+    #ticket{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
+
+/* Ticket Buttons */
+.ticket-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Ticket Buttons Styling */
+.ticket-buttons button{
+    width: 48%;
+}
+
+/* Ticket Container */
+.ticket-container{
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #004080;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    display: none;
+}
+
+
+/* Ticket Container */
+.ticket-container{
+
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+
+    background-color: white;
+
+    border: 2px solid #004080;
+
+    border-radius: 10px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: none;
+}
+
+
+
+/* Watermark Image */
+.watermark{
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 250px;
+
+    opacity: 0.15;
+
+    z-index: 0;
+}
+
+
+
+/* Content Above Watermark */
+.ticket-container h2,
+.ticket-container p,
+.ticket-buttons{
+
+    position: relative;
+
+    z-index: 1;
+}
+
+/* Slider Container */
+.slider{
+
+    width: 100%;
+    height: 400px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+
+/* Slide Images */
+.slide{
+
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+
+    position: absolute;
+
+    opacity: 0;
+
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+/* Active Image */
+.slide.active{
+
+    opacity: 1;
+}
+
+/* Map Section */
+.map-section{
+
+    width: 90%;
+
+    margin: 30px auto;
+
+    text-align: center;
+}
+
+
+
+/* Route Section */
+.route-section{
+
+    width: 90%;
+
+    margin: 30px auto;
+}
+
+
+
+/* Table Styling */
+table{
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+
+
+/* Table Borders */
+table,
+th,
+td{
+
+    border: 1px solid gray;
+}
+
+
+
+/* Table Cells */
+th,
+td{
+
+    padding: 15px;
+
+    text-align: center;
+}
+
+
+
+/* Table Header */
+th{
+
+    background-color: #004080;
+
+    color: white;
+}
+
+
+
+/* Alternate Rows */
+tr:nth-child(even){
+
+    background-color: #f2f2f2;
+}
+
+
+
+/* Advertisement Section */
+.route-advert{
+
+    width: 80%;
+
+    margin: 40px auto;
+
+    text-align: center;
+}
+
+/* Comment Textarea */
+textarea{
+
+    width: 100%;
+
+    height: 200px;
+
+    padding: 15px;
+
+    font-size: 18px;
+
+    border: 2px solid #004080;
+
+    border-radius: 10px;
+
+    resize: vertical;
+
+    box-sizing: border-box;
+
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+
+/* Textarea Focus Effect */
+textarea:focus{
+
+    outline: none;
+
+    border-color: #00aaff;
+
+    box-shadow: 0px 0px 10px lightblue;
+}
+
+
+/* Center Button Container */
+.contact-box a{
+
+    display: flex;
+
+
+    margin-top: 15px;
+
+    text-decoration: none;
+}
+
+
+
+/* Uniform Buttons */
+.contact-box button{
+
+    width: 180px;
+
+    height: 50px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+/* Full Name and Email Fields */
+.comment-section input{
+
+    width: 500px;
+
+    height: 45px;
+
+    padding: 10px;
+
+    font-size: 16px;
+
+    border: 2px solid #004080;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 15px;
+}
+
+
+
+/* Comment Text Area */
+.comment-section textarea{
+
+    width: 500px;
+
+    height: 200px;
+
+    padding: 10px;
+
+    font-size: 16px;
+
+    border: 2px solid #004080;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+
+    resize: vertical;
+
+    margin-bottom: 20px;
+}
