@@ -1,0 +1,91 @@
+Mwendokasi Bus Ticket Booking System
+Introduction
+
+The Mwendokasi Bus Ticket Booking System is a web-based application developed to improve the bus ticket booking process by allowing passengers to book tickets online. Instead of standing in long queues or manually purchasing tickets, users can access the system through a web browser, select their destination, view ticket prices, generate tickets, and download or print them instantly.
+
+This project was developed as an academic and practical learning project using web development technologies including HTML, CSS, JavaScript, PHP, and MySQL. The system demonstrates how technology can be used to improve public transportation services by making ticket booking faster, easier, and more convenient for passengers.
+
+Purpose of the Project
+
+The main purpose of this project is to provide a simple and efficient platform that allows passengers to book bus tickets online while enabling transport operators to manage bookings more effectively.
+
+The system was designed to reduce manual work, improve record keeping, and provide passengers with a modern and user-friendly ticket booking experience.
+
+Objectives
+Main Objective
+
+To develop a secure and user-friendly web application that enables online bus ticket booking and management.
+
+Specific Objectives
+To provide an online platform for bus ticket booking.
+To display available routes and ticket prices.
+To automatically calculate fares based on selected destinations.
+To generate printable and downloadable tickets.
+To provide multiple payment options for customers.
+To allow customers to communicate with bus operators through various communication channels.
+To store booking information securely in a database.
+To improve customer satisfaction through efficient service delivery.
+
+System Features
+Home Page
+
+The home page introduces users to the Mwendokasi Bus Services. It provides information about the company, available transportation services, bus facilities, and general advertisements encouraging customers to use the service.
+
+The page also contains a slideshow displaying images of the buses, including both interior and exterior views, giving customers a better understanding of the transport services offered.
+
+Route Page
+
+The route page displays detailed information about available routes. Users can view:
+
+Route names
+Distance covered
+Number of passengers allowed
+Ticket prices
+Route availability
+
+The page also includes a map section that can later be extended to support real-time bus tracking.
+
+Ticket Booking Page
+
+This page allows customers to:
+
+Enter personal information
+Select a destination
+Automatically view the ticket price
+Select a preferred payment method
+Generate a ticket
+Print the ticket
+Download the ticket as a PDF document
+Contact Page
+
+The contact page enables communication between customers and the transport company. It provides:
+
+Phone numbers
+Email addresses
+WhatsApp contacts
+Instagram account
+X (Twitter) account
+
+Customers can also submit comments and feedback regarding the services offered.
+
+Ticket Generation
+
+Once booking information is provided, the system automatically generates a ticket containing:
+
+Passenger name
+Phone number
+Destination
+Ticket price
+Payment method
+Booking date and time
+
+The ticket can be printed or downloaded for future use.
+
+Technologies Used
+
+The project was developed using the following technologies:
+
+Front-End Technologies
+HTML5
+CSS3
+JavaScript
